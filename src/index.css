@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans antialiased; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-white/10 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-brand-green/50; }
+
+  /* Select option background fix */
+  option { @apply bg-dark-700 text-white; }
+}
+
+@layer components {
+  /* Skeleton loader */
+  .skeleton {
+    @apply rounded-xl animate-shimmer;
+    background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 75%);
+    background-size: 200% 100%;
+  }
+  .dark .skeleton {
+    background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.07) 50%, rgba(255,255,255,0.04) 75%);
+    background-size: 200% 100%;
+  }
+
+  /* Glass card */
+  .glass-card {
+    @apply bg-white/80 dark:bg-dark-700/80 backdrop-blur-sm
+           border border-black/10 dark:border-white/10
+           rounded-2xl shadow-card;
+  }
+
+  /* Recharts tooltip */
+  .recharts-tooltip-wrapper { outline: none !important; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
