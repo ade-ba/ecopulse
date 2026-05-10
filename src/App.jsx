@@ -70,7 +70,10 @@ function Dashboard() {
           {/* Footer */}
           <div className="mt-10 pt-5 border-t border-black/6 dark:border-white/6 flex items-center justify-between flex-wrap gap-2">
             <p className="font-mono text-[10px] text-slate-300 dark:text-slate-600 uppercase tracking-widest">
-              EcoPulse · SWD 413 Project
+              EcoPulse · SWD 413 . Group one
+            </p>
+            <p className="font-mono text-[10px] text-slate-300 dark:text-slate-600 uppercase tracking-widest">
+              Lecturer in-charge : Mr. Oladosu S.F.
             </p>
             <p className="font-mono text-[10px] text-slate-300 dark:text-slate-600">
               Powered by OpenWeatherMap API
