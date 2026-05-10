@@ -66,5 +66,11 @@ export default function WeeklyForecast() {
         })}
       </div>
     </div>
-  )
-}
+    <div className="glass-card p-5 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+      <p className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-4">About Ecopulse</p>
+
+      <div className="flex flex-col divide-y divide-black/5 dark:divide-white/5">
+        
+      </div>
+    )
+  }
